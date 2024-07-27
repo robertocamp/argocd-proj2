@@ -323,3 +323,24 @@ By following these steps, you can log in to Docker Hub automatically using a scr
    ```
 
 This approach allows you to log in to Docker Hub without having to manually enter your credentials each time.
+
+
+just one clarification: in previous step, I combined the "deployment" and the "service" into one file, but still called it deployment.  My app project now looks like this:
+
+
+```
+ tree                    ▦ argocd-proj2 ◬ initial⎪●◦◌◦⎥ docker ◧ desktop-linux go ∩ v1.22.5  aws ▲   us-east-2 17:17
+.
+├── Dockerfile
+├── LICENSE
+├── README.md
+├── argocd
+│   └── application.yaml
+├── go.mod
+├── go.sum
+├── k8s
+│   ├── README.k8s.md
+│   └── deployment.yml
+├── main.go
+└── main_test.go
+```
