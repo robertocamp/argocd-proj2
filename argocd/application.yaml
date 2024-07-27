@@ -11,7 +11,7 @@ spec:
     path: k8s
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: demo
+    namespace: argocd-proj2
   syncPolicy:
     automated:
       prune: true
